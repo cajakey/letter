@@ -167,7 +167,6 @@ body {
 @media only screen and (max-width: 768px) {
     body {
         zoom: 0.75; /* Zoom out to 75% of its original size */
-        margin-top: 100px;
     }
 
     .modal-content {
