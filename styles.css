@@ -155,13 +155,136 @@ body {
 }
 
 .modal-content {
-    background-color: #fefefe;
     margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
     width: 80%;
     max-width: 600px;
-    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.envelope {
+    position: relative;
+    cursor: pointer;
+}
+
+.back {
+    position: relative;
+    width: 250px;
+    height: 200px;
+    background-color: #d3d3d3;
+}
+  
+.letter {
+    position: absolute;
+    background-color: #fff;
+    width: 230px;
+    height: 180px;
+    top: 10px;
+    left: 10px;
+    transition: .2s;
+}
+  
+.letter:before {
+    position: absolute;
+    background-color: #333;
+    width: 80px;
+    height: 80px;
+    top: 75px;
+    left: 75px;
+}
+  
+.letter:after {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    top: 82px;
+    left: 82px;
+}
+  
+.text {
+    text-align: center;
+    font-size: 10px;
+    font-family: arial;
+    margin-top: 10px;
+    padding: 10px;
+}
+  
+.text:before, .text:after {
+    position: absolute;
+    width: 5px;
+    border-radius: 10px;
+    background-color: #333;
+    height: 20px;
+    top: 60px;
+}
+  
+.text:before {
+    left: 108px;
+    transform: rotate(-25deg);
+}
+  
+.text:after {
+    left: 118px;
+    transform: rotate(25deg);
+}
+  
+.front {
+    position: absolute;
+    border-right: 130px solid #a9a9a9;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+    height: 0;
+    width: 0;
+    top: 0;
+    left: 120px;
+    z-index: 3;
+}
+  
+.front:before {
+    content: "";
+    position: absolute;
+    border-left: 130px solid #a9a9a9;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+    height: 0;
+    width: 0;
+    top: -100px;
+    left: -120px;
+}
+  
+.front:after {
+    content: "";
+    position: absolute;
+    border-bottom: 105px solid #b0b0b0;
+    border-left: 125px solid transparent;
+    border-right: 125px solid transparent;
+    height: 0;
+    width: 0;
+    top: -5px;
+    left: -120px;
+}
+  
+.top {
+    position: absolute;
+    border-top: 105px solid #c0c0c0;
+    border-left: 125px solid transparent;
+    border-right: 125px solid transparent;
+    height: 0;
+    width: 0;
+    top: 0;
+    transform-origin: top;
+    transition: .4s;
+}
+
+.envelope:hover .top {
+    transform: rotateX(160deg);
+}
+  
+.envelope:hover .letter {
+    transform: translateY(-100px);
+    z-index: 2;
 }
 
 @media only screen and (max-width: 768px) {
