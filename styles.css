@@ -170,16 +170,16 @@ body {
 
 .back {
     position: relative;
-    width: 250px;
-    height: 200px;
+    width: 313px;
+    height: 250px;
     background-color: #d3d3d3;
 }
   
 .letter {
     position: absolute;
     background-color: #fff;
-    width: 230px;
-    height: 180px;
+    width: 288px;
+    height: 225px;
     top: 10px;
     left: 10px;
     transition: .2s;
@@ -188,16 +188,16 @@ body {
 .letter:before {
     position: absolute;
     background-color: #333;
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     top: 75px;
     left: 75px;
 }
   
 .letter:after {
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 38px;
+    height: 38px;
     background-color: #fff;
     top: 82px;
     left: 82px;
@@ -232,45 +232,45 @@ body {
   
 .front {
     position: absolute;
-    border-right: 130px solid #a9a9a9;
-    border-top: 100px solid transparent;
-    border-bottom: 100px solid transparent;
+    border-right: 163px solid #a9a9a9;
+    border-top: 125px solid transparent;
+    border-bottom: 125px solid transparent;
     height: 0;
     width: 0;
     top: 0;
-    left: 120px;
+    left: 150px;
     z-index: 3;
 }
   
 .front:before {
     content: "";
     position: absolute;
-    border-left: 130px solid #a9a9a9;
-    border-top: 100px solid transparent;
-    border-bottom: 100px solid transparent;
+    border-left: 163px solid #a9a9a9;
+    border-top: 125px solid transparent;
+    border-bottom: 125px solid transparent;
     height: 0;
     width: 0;
-    top: -100px;
-    left: -120px;
+    top: -125px;
+    left: -150px;
 }
   
 .front:after {
     content: "";
     position: absolute;
-    border-bottom: 105px solid #b0b0b0;
-    border-left: 125px solid transparent;
-    border-right: 125px solid transparent;
+    border-bottom: 131px solid #b0b0b0;
+    border-left: 156px solid transparent;
+    border-right: 156px solid transparent;
     height: 0;
     width: 0;
-    top: -5px;
-    left: -120px;
+    top: -6px;
+    left: -150px;
 }
   
 .top {
     position: absolute;
-    border-top: 105px solid #c0c0c0;
-    border-left: 125px solid transparent;
-    border-right: 125px solid transparent;
+    border-top: 131px solid #c0c0c0;
+    border-left: 156px solid transparent;
+    border-right: 156px solid transparent;
     height: 0;
     width: 0;
     top: 0;
@@ -289,10 +289,10 @@ body {
 
 @media only screen and (max-width: 768px) {
     body {
-        zoom: 0.75; /* Zoom out to 75% of its original size */
+        zoom: 0.75;
     }
 
     .modal-content {
-        margin: 60% auto;   
+        margin: 75% auto;   
     }
 }
